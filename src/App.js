@@ -16,7 +16,11 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import HomeIcon from '@material-ui/icons/Home'
+import LocationCity from '@material-ui/icons/LocationCity'
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import './App.css';
 // import PrimarySearchAppBar from './comp/PrimarySearchAppBar'
@@ -25,7 +29,7 @@ import About from './pages/About'
 import PageNotFound from './pages/PageNotFound'
 
 
-const drawerWidth = 240;
+const drawerWidth = 298;
 
 const styles = theme => ({
   root: {
@@ -77,23 +81,33 @@ class App extends Component {
 
   render() {
     const { classes, theme } = this.props;
+    const CascadeLogo = (<img alt="Cascade Logo"
+      style={{ height: 60 }}
+      src="https://firebasestorage.googleapis.com/v0/b/cascade-build.appspot.com/o/logo.png?alt=media&token=718cbe52-2130-4242-8dea-cfd3f88fe490"
+    />)
     const MenuContent = (
       <div>
-        <div className={classes.toolbar} />
+        <div className={classes.toolbar} style={{ backgroundColor: '#333' }} >
+          {CascadeLogo}
+        </div>
         <Divider />
-        <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/topics">Topics</Link>
-            </li>
-          </ul>
+
         <List>
-          
+          <Link to="/home" style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText primary={'Home'} />
+            </ListItem>
+          </Link>
+
+          <Link to="/home#about" style={{ textDecoration: 'none' }}>
+            <ListItem button>
+              <ListItemIcon><LocationCity /></ListItemIcon>
+              <ListItemText primary={'About'} />
+            </ListItem>
+          </Link>
+
+
           {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
@@ -118,8 +132,8 @@ class App extends Component {
       <Router>
         <div className={classes.root}>
           <CssBaseline />
-          <AppBar position="fixed" className={classes.appBar}>
-            <Toolbar>
+          <AppBar position="fixed" className={classes.appBar} >
+            <Toolbar style={{ backgroundColor: "#333" }}>
               <IconButton
                 color="inherit"
                 aria-label="Open drawer"
@@ -128,9 +142,12 @@ class App extends Component {
               >
                 <MenuIcon />
               </IconButton>
+              <Hidden smUp>
+                {CascadeLogo}
+              </Hidden>
               <Typography variant="h6" color="inherit" noWrap>
-                Responsive drawer
-            </Typography>
+
+              </Typography>
             </Toolbar>
           </AppBar>
           <nav className={classes.drawer}>
@@ -164,10 +181,13 @@ class App extends Component {
               </Drawer>
             </Hidden>
           </nav>
-          <main className={classes.content}>
+          <main className={classes.content} style={{
+            backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/cascade-build.appspot.com/o/bg.jpg?alt=media&token=eac61b26-e3ff-4388-ba84-31450be8e969)',
+            backgroundColor: '#e8e8e8'}}>
             <div className={classes.toolbar} />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/home" component={Home} />
               <Route path="/about" component={About} />
               <Route component={PageNotFound} />
             </Switch>
