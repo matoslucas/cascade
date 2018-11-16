@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Footer from "./layout/Footer";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
@@ -29,7 +32,16 @@ import About from './pages/About'
 import PageNotFound from './pages/PageNotFound'
 
 
-const drawerWidth = 298;
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark',
+    primary: { main: '#424242', contrastText: '#ffffff' },
+    secondary: { main: '#42A5F5', contrastText: '#FAFAFA' }
+  },
+});
+
+
+const drawerWidth = 260;
 
 const styles = theme => ({
   root: {
@@ -80,9 +92,9 @@ class App extends Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const CascadeLogo = (<img alt="Cascade Logo"
-      style={{ height: 60 }}
+      style={{ height: 50 }}
       src="https://firebasestorage.googleapis.com/v0/b/cascade-build.appspot.com/o/logo.png?alt=media&token=718cbe52-2130-4242-8dea-cfd3f88fe490"
     />)
     const MenuContent = (
@@ -129,8 +141,9 @@ class App extends Component {
 
 
     return (
+      <MuiThemeProvider theme={theme}>
       <Router>
-        <div className={classes.root}>
+        <div className={classes.root} >
           <CssBaseline />
           <AppBar position="fixed" className={classes.appBar} >
             <Toolbar style={{ backgroundColor: "#333" }}>
@@ -181,19 +194,29 @@ class App extends Component {
               </Drawer>
             </Hidden>
           </nav>
-          <main className={classes.content} style={{
+          <div style={{
             backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/cascade-build.appspot.com/o/bg.jpg?alt=media&token=eac61b26-e3ff-4388-ba84-31450be8e969)',
-            backgroundColor: '#e8e8e8'}}>
-            <div className={classes.toolbar} />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />
-              <Route component={PageNotFound} />
-            </Switch>
-          </main>
+            backgroundColor: '#e8e8e8'
+          }}>
+            <main className={classes.content} >
+              <div className={classes.toolbar} />
+              
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route path="/home" component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route component={PageNotFound} />
+                </Switch>
+             
+
+            </main>
+            <Footer>{CascadeLogo}</Footer>
+          </div>
+
         </div>
-      </Router>
+        </Router>
+      </MuiThemeProvider>
+
     );
   }
 }
