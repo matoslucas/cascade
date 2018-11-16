@@ -30,13 +30,28 @@ import './App.css';
 import Home from './pages/Home'
 import About from './pages/About'
 import PageNotFound from './pages/PageNotFound'
-
+import Services from './pages/Services'
 
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
-    primary: { main: '#424242', contrastText: '#ffffff' },
-    secondary: { main: '#42A5F5', contrastText: '#FAFAFA' }
+    background: { "paper": "#333", "default": "#000" },
+    typography: {
+      // Use the system font instead of the default Roboto font.
+      fontFamily: [
+        'Montserrat',
+        'sans-serif',
+      ].join(','),
+    },
+    overrides: {
+      MuiCardContent: { // Name of the component ⚛️ / style sheet
+        root: { // Name of the rule
+          color: 'white', // Some CSS
+          backgroundColor: '#fff'
+        },
+      },
+    },
+  
   },
 });
 
@@ -112,10 +127,10 @@ class App extends Component {
             </ListItem>
           </Link>
 
-          <Link to="/home#about" style={{ textDecoration: 'none' }}>
+          <Link to="/services" style={{ textDecoration: 'none' }}>
             <ListItem button>
               <ListItemIcon><LocationCity /></ListItemIcon>
-              <ListItemText primary={'About'} />
+              <ListItemText primary={'Services'} />
             </ListItem>
           </Link>
 
@@ -205,6 +220,7 @@ class App extends Component {
                   <Route exact path="/" component={Home} />
                   <Route path="/home" component={Home} />
                   <Route path="/about" component={About} />
+                  <Route path="/services" component={Services}/>
                   <Route component={PageNotFound} />
                 </Switch>
              

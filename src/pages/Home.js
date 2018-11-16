@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles'
+
 import Button from '@material-ui/core/Button';
-
-
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardActions from '@material-ui/core/CardActions';
@@ -12,9 +13,32 @@ import { Carousel } from 'react-responsive-carousel'
 
 // import Typography from '@material-ui/core/Typography';
 
+const styles = {
+    card: {
+        backgroundColor: '#fff',
+    },
+    title: {
+            textAlign: 'center',
+            color: '#333',
+            textTransform: 'uppercase',
+            fontSize: '0.75em',   
+    },
+    header: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderBottom: 'solid 1px #00aae6',
+    },
+    box: {
+        display: 'flex',
+        justifyContent: 'center',
+    }
+
+};
 
 class Home extends Component {
     render() {
+        const { classes } = this.props;
         const legendStyle = {
             display: 'flex',
             backgroundColor: 'transparent',
@@ -23,6 +47,8 @@ class Home extends Component {
             alignItems: 'center',
             justifyContent: 'center'
         }
+
+
         return (
             <div>
 
@@ -40,64 +66,21 @@ class Home extends Component {
                         <div className="legend" style={legendStyle} >Brick</div>
                     </div>
                 </Carousel>
-                {/* 
-                <Card>
-                    <CardContent style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        flexDirection: 'column',
-                        alignItems: 'center'
-                    }}>
-                        <h1 style={{
-                            fontFamily: 'La Belle Aurore',
-                            width: '70%',
-                            textAlign: 'center',
-                            color: '#333'
-                        }}>
-                            At Cascade, your exterior project is in good hands.
-                    </h1>
-                    </CardContent>
-                </Card>
-               
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    flexDirection: 'column',
-                    alignItems: 'center'
-                }}>
-                    <h1 style={{
-                        fontFamily: 'La Belle Aurore',
-                        width: '70%',
-                        textAlign: 'center',
-                        color: '#333'
-                    }}>
-                        At Cascade, your exterior project is in good hands.
-                    </h1>
-                    <hr style={{
-                        border: '2px #1e83ed solid',
-                        width: '75%',
-                        height: 1
-                    }} />
-                </div>
-                    */}
+
                 <br />
 
-                <Card>
+                <Card className={classes.card}>
                     <CardHeader
-                        title={<div style={{
-                            fontWeight: 300,
-                            fontSize: '1.2em',
-                            fontFamily: 'Montserrat',
-                            textAlign: 'center',
-                            color: '#333'
-                        }}>
-                            At Cascade, your exterior project is in good hands.    </div>}
+                        title={
+                            <div className={classes.header}>
+                                <span className={classes.title}>
+                                    At Cascade, your exterior project is in good hands.
+                                </span>
+                            </div>
+                        }
 
                     />
-                    <CardContent style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }}>
+                    <CardContent className={classes.box}>
                         <p>
                             We partner with our clients to give them exactly the look they envision with professional guidance and execution.
                             Because we work directly with you, you’ll never have to worry about having your vision supplanted with another’s.
@@ -105,33 +88,29 @@ class Home extends Component {
                             Call us today and get the look you want with the service you want.
                         </p>
                     </CardContent>
-                    <CardActions style={{ display: 'flex', justifyContent: 'center' }}>
+                    <CardActions className={classes.box}>
                         <Button size="small" color="primary">
                             Looking to work for a company that you can grow with?
                         </Button>
-                        <Button variant="outlined" >
+                        <Button variant="outlined" color="primary" >
                             Contact
                         </Button>
 
                     </CardActions>
                 </Card>
                 <br />
-                <Card>
-                    <CardHeader
-                        title={<div style={{
-                            fontWeight: 300,
-                            fontSize: '1.2em',
-                            fontFamily: 'Montserrat',
-                            textAlign: 'center',
-                            color: '#333'
-                        }}>
-                            The Cascade Way    </div>}
 
+                <Card className={classes.card}>
+                    <CardHeader
+                        title={
+                            <div className={classes.header}>
+                                <span className={classes.title}>
+                                    The Cascade Way
+                                </span>
+                            </div>
+                        }
                     />
-                    <CardContent style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                    }}>
+                    <CardContent className={classes.box}>
                         <p>
                             We are building the legacy buildings of tomorrow,
                             the designs that future generations will look back on for inspiration.
@@ -143,34 +122,24 @@ class Home extends Component {
                             We’re cutting costs and waste while improving quality and aesthetics. Let’s get started.
                         </p>
                     </CardContent>
-                    <CardActions style={{ display: 'flex', justifyContent: 'center' }}>
+                    <CardActions className={classes.box}>
                         <Button size="small" color="primary">
                             Looking to work for a company that you can grow with?
                         </Button>
-                        <Button variant="outlined" >
+                        <Button variant="outlined"  color="primary">
                             Contact
                         </Button>
 
                     </CardActions>
                 </Card>
-
-
-
-
-
-
-                <br /> <br /><br /><br /><br />
-                <br /> <br /><br /><br /><br />
-                <br /> <br /><br /><br /><br />
-                <br /> <br /><br /><br /><br />
-                <br /> <br /><br /><br /><br />
-                <div id="about">
-
-                   
-
-                </div>
+               
             </div>
         )
     }
 }
-export default Home;
+
+Home.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Home);

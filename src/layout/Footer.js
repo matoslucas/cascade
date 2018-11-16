@@ -65,7 +65,7 @@ class Footer extends Component {
                                     Contact Us
                             </span>
                                 <br />
-                                <span style={{ fontSize: 'x-small' }}>
+                                <span style={{ fontSize: 'small' }}>
                                     352 Gold Tip Drive, Orem, UT 84058
                             </span>
                             </a>
@@ -78,7 +78,7 @@ class Footer extends Component {
 
                     <Divider className={classes.MuiDivider} />
                     <ListItem button>
-                        <ListItemText className={classes.MuiListItemText} primary="Fax:" secondary="(801) 881-8100" />
+                        <ListItemText className={classes.MuiListItemText} primary="Fax:" secondary=" (801) 881-8100" />
                     </ListItem>
                     <Divider className={classes.MuiDivider} />
                     <ListItem button={false} component="div">
