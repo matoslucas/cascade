@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CarouselPage from '../components/CarouselPage'
-import MagazinePage from '../sections/MagazinePage'
+import FeaturesPage from '../sections/FeaturesPage'
 
 class Home extends Component {
 
@@ -8,7 +8,7 @@ class Home extends Component {
         return (
             <div>
                 <CarouselPage />
-                <MagazinePage />
+                <FeaturesPage />
             </div>
         )
     }

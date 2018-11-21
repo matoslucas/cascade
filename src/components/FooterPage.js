@@ -36,7 +36,7 @@ class FooterPage extends React.Component {
                 <h3 className="my-4 pb-2">Contact Us</h3>
                 <ul className="text-lg-left list-unstyled ml-4">
                   <li>
-                    <Fa icon="map-marker" className="pr-2" />
+                    <Fa icon="map-marker-alt" className="pr-2" />
                     <a href="https://www.google.com/maps/dir/?api=1&destination=352+Gold+Tip+Dr+OREM+UT+84058">
                       352 Gold Tip Drive, Orem, UT 84058
                   </a>

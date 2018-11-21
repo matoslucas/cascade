@@ -72,7 +72,7 @@ class ContactPage extends Component {
                                                     >Your message</textarea>
                                                 </div>
                                                 <Button color="blue" size="lg" style={circleButtonStyle}>
-                                                    <Fa icon="send-o" />
+                                                    <Fa icon="paper-plane" />
                                                 </Button>
                                             </div>
                                         </Col>
@@ -90,16 +90,17 @@ class ContactPage extends Component {
                     </Col>
 
                     <Row className="text-center">
-                        <Col>
+                        <Col md="4">
                             <Button color="blue" size="lg" style={circleButtonStyle}>
-                                <Fa icon="map-marker" />
+                                <Fa icon="map-marker-alt" />
                             </Button>
                             <br />
                             <a href="https://www.google.com/maps/dir/?api=1&destination=352+Gold+Tip+Dr+OREM+UT+84058">
                                 352 Gold Tip Drive, Orem, UT 84058
                                     </a>
+                                    <p className="mb-md-0">&nbsp;</p>
                         </Col>
-                        <Col>
+                        <Col md="4">
                             <Button size="lg" color="blue" style={circleButtonStyle}>
                                 <Fa icon="phone" />
                             </Button>
@@ -107,12 +108,13 @@ class ContactPage extends Component {
                             <a href="tel:801-980-3393">(801) 980-3393</a>
                             <p className="mb-md-0">Mon-Fri, 8:00-5:00</p>
                         </Col>
-                        <Col>
+                        <Col md="4">
                             <Button size="lg" color="blue" style={circleButtonStyle}>
                                 <Fa icon="envelope" />
                             </Button>
                             <br />
                             <a href="mailto:info@cascade.build?Subject=Contact">info@cascade.build</a>
+                            <p className="mb-md-0">&nbsp;</p>
                         </Col>
                     </Row>
 
