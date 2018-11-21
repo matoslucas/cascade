@@ -7,6 +7,7 @@
     "@material-ui/icons": "^3.0.1",
     "firebase": "^5.5.8",
     "firebase-tools": "^6.1.0",
+    "mdbreact": "^4.8.3",
     "nuka-carousel": "^4.4.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
