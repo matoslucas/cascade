@@ -51,7 +51,7 @@ class NavbarPage extends React.Component {
                             <NavLink to="/">Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="/home#services">About</NavLink>
+                            <NavLink to="/about">About</NavLink>
                         </NavItem>
 
                         <NavItem>
@@ -79,7 +79,7 @@ class NavbarPage extends React.Component {
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to="/">Contact</NavLink>
+                            <NavLink to="/contact">Contact</NavLink>
                         </NavItem>
                     </NavbarNav>
                 </Collapse>

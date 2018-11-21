@@ -4,7 +4,7 @@ import { Carousel, CarouselCaption, CarouselInner, CarouselItem, View, Mask } fr
 class CarouselPage extends Component {
   render() {
     return (
-      <Carousel activeItem={1} length={4} showControls={true} showIndicators={true} className="z-depth-1">
+      <Carousel activeItem={1} length={6} showControls={true} showIndicators={true} className="z-depth-1">
         <CarouselInner>
           <CarouselItem itemId="1">
             <View>
@@ -42,6 +42,29 @@ class CarouselPage extends Component {
               <h1 className="display-3">Brick.</h1>
             </CarouselCaption>
           </CarouselItem>
+
+          <CarouselItem itemId="5">
+            <View>
+              <img className="d-block w-100" src={require('../assets/img/slide-soffit-fascia.jpg')} alt="Soffit & Fascia" />
+              <Mask overlay="black-strong" />
+            </View>
+            <CarouselCaption>
+              <h1 className="display-3">Soffit & Fascia.</h1>
+            </CarouselCaption>
+          </CarouselItem>
+
+          <CarouselItem itemId="6">
+            <View>
+              <img className="d-block w-100" src={require('../assets/img/slide-rain-gutters.jpg')} alt="Rain Gutters" />
+              <Mask overlay="black-strong" />
+            </View>
+            <CarouselCaption>
+              <h1 className="display-3">Rain Gutters.</h1>
+            </CarouselCaption>
+          </CarouselItem>
+
+          
+          
         </CarouselInner>
       </Carousel>
     );

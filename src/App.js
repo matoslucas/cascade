@@ -6,7 +6,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import NavbarPage from './components/NavbarPage'
 import FooterPage from './components/FooterPage'
+
 import Home from './pages/Home'
+import Contact from './pages/Contact'
 
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/home" component={Home} />
+              <Route path="/contact" component={Contact} />
             </Switch>
             <FooterPage />
           </div>       
