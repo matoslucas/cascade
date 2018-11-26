@@ -9,6 +9,7 @@ import FooterPage from './components/FooterPage'
 
 import Home from './pages/Home'
 import Contact from './pages/Contact'
+import About from './pages/About'
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
               <Route path="/" exact component={Home} />
               <Route path="/home" component={Home} />
               <Route path="/contact" component={Contact} />
+              <Route path="/about" component={About} />
             </Switch>
             <FooterPage />
           </div>       

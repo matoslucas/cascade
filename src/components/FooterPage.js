@@ -64,17 +64,17 @@ class FooterPage extends React.Component {
                 <ul className="list-inline text-center list-unstyled">
                   <li className="list-inline-item">
                     <a className="p-2 fa-lg w-ic">
-                      <Fa icon="twitter" />
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="p-2 fa-lg w-ic">
-                      <Fa icon="linkedin" />
+                      <i className="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a className="p-2 fa-lg w-ic">
-                      <Fa icon="instagram" />
+                      <i className="fab fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
