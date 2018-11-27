@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^3.0.1",
     "firebase": "^5.5.8",
     "firebase-tools": "^6.1.1",
+    "material-ui": "^0.20.2",
     "mdbreact": "^4.8.4",
     "react": "^16.6.1",
     "react-card-flip": "^0.3.0",
