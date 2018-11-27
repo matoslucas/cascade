@@ -25,21 +25,37 @@ class ContactPage extends Component {
                     <Row>
                         <Col lg="12">
                             <div id="map-container" className="rounded z-depth-1-half map-container" style={{ height: '400px' }}>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2936828928973!2d-111.73205518510512!3d40.29143767937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b30eb9943cd%3A0x1ac66f74b6d95548!2sCascade+Stucco+And+Exteriors!5e0!3m2!1sen!2sus!4v1542825913546" width="100%" height="100%" frameBorder="0" style={{ border: 0 }}></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2936828928973!2d-111.73205518510512!3d40.29143767937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b30eb9943cd%3A0x1ac66f74b6d95548!2sCascade+Stucco+And+Exteriors!5e0!3m2!1sen!2sus!4v1542825913546"
+                                    width="100%"
+                                    height="100%"
+                                    frameBorder="0"
+                                    style={{ border: 0 }}>
+                                </iframe>
                             </div>
                             <br />
 
                         </Col>
                         <Col lg="12">
-                            <br />
+                          
+                                <iframe
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSeo4qDLaxT1S8HGoZ-PfCTF_ouZY7g31ZYxxpq7ChIxQhHHSw/viewform?embedded=true"
+                                    width="100%"
+                                    height="900"
+                                    frameBorder="0"
+                                    style={{ border: 0 }}>
+                                    Loading...
+                                </iframe>
+
                         </Col>
+                        {/*
                         <Col lg="12">
 
                             <Card>
                                 <CardBody className="form" style={{ color: '#1976d2' }}>
                                     <h3 className="mt-4">
                                         <Fa icon="envelope" className="pr-2" />Write to us:
-                  </h3>
+                                    </h3>
                                     <Row>
                                         <Col md="6">
                                             <div className="md-form mb-0">
@@ -81,43 +97,9 @@ class ContactPage extends Component {
                             </Card>
 
                         </Col>
-
-
+                        */}
+                        
                     </Row>
-
-                    <Col lg="12">
-                        <br />
-                    </Col>
-
-                    <Row className="text-center">
-                        <Col md="4">
-                            <Button color="blue" size="lg" style={circleButtonStyle}>
-                                <Fa icon="map-marker-alt" />
-                            </Button>
-                            <br />
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=352+Gold+Tip+Dr+OREM+UT+84058">
-                                352 Gold Tip Drive, Orem, UT 84058
-                                    </a>
-                                    <p className="mb-md-0">&nbsp;</p>
-                        </Col>
-                        <Col md="4">
-                            <Button size="lg" color="blue" style={circleButtonStyle}>
-                                <Fa icon="phone" />
-                            </Button>
-                            <br />
-                            <a href="tel:801-980-3393">(801) 980-3393</a>
-                            <p className="mb-md-0">Mon-Fri, 8:00-5:00</p>
-                        </Col>
-                        <Col md="4">
-                            <Button size="lg" color="blue" style={circleButtonStyle}>
-                                <Fa icon="envelope" />
-                            </Button>
-                            <br />
-                            <a href="mailto:info@cascade.build?Subject=Contact">info@cascade.build</a>
-                            <p className="mb-md-0">&nbsp;</p>
-                        </Col>
-                    </Row>
-
 
                 </section>
             </Container>

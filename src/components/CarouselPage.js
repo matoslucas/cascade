@@ -49,7 +49,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Soffit & Fascia.</h1>
+              <h1 className="display-4">Soffit & Fascia.</h1>
             </CarouselCaption>
           </CarouselItem>
 
@@ -59,12 +59,10 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Rain Gutters.</h1>
+              <h1 className="display-4">Rain Gutters.</h1>
             </CarouselCaption>
           </CarouselItem>
 
-          
-          
         </CarouselInner>
       </Carousel>
     );

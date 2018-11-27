@@ -8,8 +8,10 @@ import NavbarPage from './components/NavbarPage'
 import FooterPage from './components/FooterPage'
 
 import Home from './pages/Home'
-import Contact from './pages/Contact'
 import About from './pages/About'
+import Projects from './pages/Projects'
+import Careers from './pages/Careers'
+import Contact from './pages/Contact'
 
 
 class App extends Component {
@@ -22,8 +24,10 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/home" component={Home} />
-              <Route path="/contact" component={Contact} />
               <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/careers" component={Careers} />
             </Switch>
             <FooterPage />
           </div>       

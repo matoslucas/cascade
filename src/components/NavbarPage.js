@@ -71,11 +71,11 @@ class NavbarPage extends React.Component {
                         </NavItem>
 
                         <NavItem>
-                            <NavLink to="/">Projects</NavLink>
+                            <NavLink to="/projects">Projects</NavLink>
                         </NavItem>
                         
                         <NavItem>
-                            <NavLink to="/">Careers</NavLink>
+                            <NavLink to="/careers">Careers</NavLink>
                         </NavItem>
 
                         <NavItem>

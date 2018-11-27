@@ -6,7 +6,7 @@ import {
     View,
 } from 'mdbreact';
 
-import ProfileCard from '../components/ProfileCard'
+// import ProfileCard from '../components/ProfileCard'
 import Profile from '../components/Profile'
 
 class TeamPage extends Component {
@@ -50,7 +50,7 @@ class TeamPage extends Component {
 
                         </Col>
                         <Col lg="5">
-                            <View className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+                            <View className="rounded z-depth-2 mb-lg-0 mb-4" hover>
                                 <img className="img-fluid" src={require('../assets/img/about.jpg')} alt="Sample image" />
 
                             </View>
@@ -88,7 +88,7 @@ class TeamPage extends Component {
 
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
 
-                            <ProfileCard name={'Ben Probst'} title={'Partner'}
+                            <Profile name={'Ben Probst'} title={'Partner'}
                                 img={require('../assets/img/profiles/Ben-ProbstWB.jpg')}
                                 bio={<div>
                                     Ben is the contractor’s contractor—he’s done it all.
@@ -106,7 +106,7 @@ class TeamPage extends Component {
                         </Col>
 
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
-                            <ProfileCard name={'Kyle Widdison'} title={'Partner'}
+                            <Profile name={'Kyle Widdison'} title={'Partner'}
                                 img={require('../assets/img/profiles/Kyle-WiddisonWB.jpg')}
                                 bio={<div>
                                     Kyle joined Cascade as a partner after 15 years of management, financial strategy, and consulting.
@@ -129,7 +129,7 @@ class TeamPage extends Component {
                     <Row>
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
 
-                            <ProfileCard name={'Julio Cortez'} title={'Scheduling'}
+                            <Profile name={'Julio Cortez'} title={'Scheduling'}
                                 img={require('../assets/img/profiles/Julio-CortezWB.jpg')}
                                 bio={<div>
                                     Around the office, we call Bob “Jefe, Jr.” Without him setting our schedules and ordering our supplies,
@@ -147,7 +147,7 @@ class TeamPage extends Component {
 
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
 
-                            <ProfileCard name={'Brenda Leyva'} title={'Administrator'}
+                            <Profile name={'Brenda Leyva'} title={'Administrator'}
                                 img={require('../assets/img/profiles/Brenda-LeyvaWB.jpg')}
                                 bio={<div>
                                     Brenda is a recent addition to the Cascade family but a crucial one.
@@ -161,7 +161,7 @@ class TeamPage extends Component {
                         </Col>
 
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
-                            <ProfileCard name={'Adela Mancera'} title={'Safety Coordinator'}
+                            <Profile name={'Adela Mancera'} title={'Safety Coordinator'}
                                 img={require('../assets/img/profiles/Adela-ManceraWB.jpg')}
                                 bio={<div>
                                     There’s a reason you never see our contractors without their safety goggles, and that reason is Adela.
