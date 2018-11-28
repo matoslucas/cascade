@@ -63,17 +63,17 @@ class FooterPage extends React.Component {
                 <hr className="hr-light my-4" />
                 <ul className="list-inline text-center list-unstyled">
                   <li className="list-inline-item">
-                    <a className="p-2 fa-lg w-ic">
+                    <a href="#!" className="p-2 fa-lg w-ic">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="p-2 fa-lg w-ic">
+                    <a href="#!" className="p-2 fa-lg w-ic">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a className="p-2 fa-lg w-ic">
+                    <a href="#!" className="p-2 fa-lg w-ic">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </li>

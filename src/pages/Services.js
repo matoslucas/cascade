@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import TeamPage from '../sections/TeamPage'
+import BlogPage from '../sections/BlogPage'
 
-class About extends Component {
+class Services extends Component {
 
     render() {
         return (
             <div>
-                <TeamPage />
+                <BlogPage />
             </div>
         )
     }
 
 }
-export default About
+export default Services

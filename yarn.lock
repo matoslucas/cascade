@@ -8611,6 +8611,14 @@ react-event-listener@^0.6.2, react-event-listener@^0.6.4:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
+react-ga@^2.5.5:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.5.tgz#b809c41d5964125fb4ce7bf480abe76d845c4f89"
+
+react-gtm-module@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-gtm-module/-/react-gtm-module-2.0.2.tgz#21e67c075f1910e9ec4ec5b9931f9044259e611a"
+
 react-image-lightbox@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-image-lightbox/-/react-image-lightbox-5.0.0.tgz#0c19aa8a43abf41262cbe082c779cc01f6334b5f"

@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, View, Mask, CardBody, Button, Fa } from 'mdbreact';
+import { 
+  Container, 
+  Row, 
+  Col, 
+  View, 
+  // Mask, 
+  CardBody, 
+  Button, 
+  Fa,
+ } from 'mdbreact';
 
 class ProjectsPage extends Component {
   render() {

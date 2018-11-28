@@ -8,11 +8,11 @@ import {
     NavLink,
     NavbarToggler,
     Collapse,
-    FormInline,
-    Dropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
+    // FormInline,
+    // Dropdown,
+    // DropdownToggle,
+    // DropdownMenu,
+    // DropdownItem,
     Media,
 } from "mdbreact";
 
@@ -53,7 +53,11 @@ class NavbarPage extends React.Component {
                         <NavItem>
                             <NavLink to="/about">About</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink to="/services">Services</NavLink>
+                        </NavItem>
 
+                        {/**
                         <NavItem>
                             <Dropdown>
                                 <DropdownToggle nav caret>
@@ -69,6 +73,7 @@ class NavbarPage extends React.Component {
                                 </DropdownMenu>
                             </Dropdown>
                         </NavItem>
+                        */}
 
                         <NavItem>
                             <NavLink to="/projects">Projects</NavLink>

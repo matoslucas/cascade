@@ -51,7 +51,8 @@ class TeamPage extends Component {
                         </Col>
                         <Col lg="5">
                             <View className="rounded z-depth-2 mb-lg-0 mb-4" hover>
-                                <img className="img-fluid" src={require('../assets/img/about.jpg')} alt="Sample image" />
+                                <img className="img-fluid" src={require('../assets/img/about.jpg')} 
+                                alt="about" />
 
                             </View>
                         </Col>

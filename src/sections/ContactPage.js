@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card, CardBody, Fa, Button, Input } from 'mdbreact';
+import { 
+    MDBContainer, 
+    Row, 
+    Col, 
+    // Card, 
+    // CardBody, 
+    // Fa, 
+    //Button, 
+    // Input
+ } from 'mdbreact';
 
 class ContactPage extends Component {
     render() {
-        const circleButtonStyle = {
-            borderRadius: '50%',
-            width: 60,
-            height: 60,
-            margin: 0,
-            padding: 0,
-        }
         return (
-            <Container>
+            <MDBContainer>
                 <section className="my-5">
                     <h2 className="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
                     <p className="text-center w-responsive mx-auto pb-5">
@@ -26,6 +28,7 @@ class ContactPage extends Component {
                         <Col lg="12">
                             <div id="map-container" className="rounded z-depth-1-half map-container" style={{ height: '400px' }}>
                                 <iframe
+                                    title="google-map"
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2936828928973!2d-111.73205518510512!3d40.29143767937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9b30eb9943cd%3A0x1ac66f74b6d95548!2sCascade+Stucco+And+Exteriors!5e0!3m2!1sen!2sus!4v1542825913546"
                                     width="100%"
                                     height="100%"
@@ -39,6 +42,7 @@ class ContactPage extends Component {
                         <Col lg="12">
                           
                                 <iframe
+                                    title="google-form"
                                     src="https://docs.google.com/forms/d/e/1FAIpQLSeo4qDLaxT1S8HGoZ-PfCTF_ouZY7g31ZYxxpq7ChIxQhHHSw/viewform?embedded=true"
                                     width="100%"
                                     height="900"
@@ -102,7 +106,7 @@ class ContactPage extends Component {
                     </Row>
 
                 </section>
-            </Container>
+            </MDBContainer>
         );
     };
 }

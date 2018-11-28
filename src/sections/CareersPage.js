@@ -25,6 +25,7 @@ class CareersPage extends Component {
                         </Col>
                         <Col lg="12">
                             <iframe
+                                title="google-form"
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSfzHhtU-6ulMmbG9-OG57SPdQmsq8pf4AnytW11D_0JNh-_rg/viewform?embedded=true"
                                 width="100%"
                                 height="900"
