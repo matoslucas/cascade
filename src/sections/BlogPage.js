@@ -15,10 +15,10 @@ const BlogPage = () => {
     return (
         <Container>
 
-            <h2 className="h1-responsive font-weight-bold text-center my-5">
+            <h2 className="h1-responsive font-weight-bold my-5">
                 Cascade is a unique, full-service exterior-finishing company.
             </h2>
-            <p className="text-center w-responsive mx-auto mb-5">
+            <p className="grey-text text-center w-responsive mx-auto mb-5">
                 We provide clients with a variety of applications,
                 allowing you to manage your building’s exterior through a single company.
             </p>

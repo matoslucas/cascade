@@ -34,11 +34,10 @@ class TeamPage extends Component {
                     <Row>
                         <Col lg="7">
 
-                            <h3 className="font-weight-bold mb-3 p-0">
-                                <strong>
-                                    Our History
-                                </strong></h3>
-                            <p>
+                            <h2 className="h1-responsive font-weight-bold my-5">
+                                Our History
+                            </h2>
+                            <p className="grey-text w-responsive mx-auto mb-5">
                                 We are building the legacy buildings of tomorrow,
                                 the designs that future generations will look back on for inspiration.
                                 We believe the only way to give them something worth looking at is by working together:
@@ -51,8 +50,8 @@ class TeamPage extends Component {
                         </Col>
                         <Col lg="5">
                             <View className="rounded z-depth-2 mb-lg-0 mb-4" hover>
-                                <img className="img-fluid" src={require('../assets/img/about.jpg')} 
-                                alt="about" />
+                                <img className="img-fluid" src={require('../assets/img/about.jpg')}
+                                    alt="about" />
 
                             </View>
                         </Col>
