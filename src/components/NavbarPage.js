@@ -48,7 +48,7 @@ class NavbarPage extends React.Component {
                 >
                     <NavbarNav left>
                         <NavItem>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/home">Home</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to="/about">About</NavLink>

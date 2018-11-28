@@ -7,6 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.carousel-indicators .active {
+  background-color: #00aae6 !important;
+}
+.carousel-indicators li {
+  background-color: #fff !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

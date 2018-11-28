@@ -4,7 +4,14 @@ import { Carousel, CarouselCaption, CarouselInner, CarouselItem, View, Mask } fr
 class CarouselPage extends Component {
   render() {
     return (
-      <Carousel activeItem={1} length={6} showControls={true} showIndicators={true} className="z-depth-1">
+      <Carousel 
+      activeItem={1} 
+      length={6} 
+      showControls={true} 
+      showIndicators={true} 
+      className="z-depth-1"
+      style={{ fontFamily: 'Cabin Sketch'}}
+      >
         <CarouselInner>
           <CarouselItem itemId="1">
             <View>
@@ -12,7 +19,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Stucco.</h1>
+              <h1 className="display-3">Stucco</h1>
             </CarouselCaption>
           </CarouselItem>
           <CarouselItem itemId="2">
@@ -21,7 +28,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Siding.</h1>
+              <h1 className="display-3">Siding</h1>
             </CarouselCaption>
           </CarouselItem>
           <CarouselItem itemId="3">
@@ -30,7 +37,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Stone.</h1>
+              <h1 className="display-3">Stone</h1>
             </CarouselCaption>
           </CarouselItem>
           <CarouselItem itemId="4">
@@ -39,7 +46,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-3">Brick.</h1>
+              <h1 className="display-3">Brick</h1>
             </CarouselCaption>
           </CarouselItem>
 
@@ -49,7 +56,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-4">Soffit & Fascia.</h1>
+              <h1 className="display-4">Soffit & Fascia</h1>
             </CarouselCaption>
           </CarouselItem>
 
@@ -59,7 +66,7 @@ class CarouselPage extends Component {
               <Mask overlay="black-strong" />
             </View>
             <CarouselCaption>
-              <h1 className="display-4">Rain Gutters.</h1>
+              <h1 className="display-4">Rain Gutters</h1>
             </CarouselCaption>
           </CarouselItem>
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
-import { Router, Route, Switch, } from "react-router-dom";
+import { Router, Route, Switch, Redirect, } from "react-router-dom";
 import createBrowserHistory from "history/createBrowserHistory";
 
 import NavbarPage from './components/NavbarPage'
@@ -39,7 +39,13 @@ class App extends Component {
           <div>
             <NavbarPage />
             <Switch>
-              <Route path="/" exact component={Home} />
+              
+              <Route exact strict path="/" render={({location}) => {
+                    if (location.pathname === window.location.pathname) {
+                        return <Redirect to="/home" />;
+                    }
+                    return null;
+                }} />
               <Route path="/home" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/services" component={Services} />
