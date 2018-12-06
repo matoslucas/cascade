@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from 'react-router-dom'
 
 import {
     Navbar,
     NavbarBrand,
     NavbarNav,
     NavItem,
-    NavLink,
-    NavbarToggler,
+    // NavLink,
+    // NavbarToggler,
+    HamburgerToggler,
     Collapse,
     // FormInline,
     // Dropdown,
@@ -30,6 +32,22 @@ class NavbarPage extends React.Component {
     }
 
     render() {
+        const activeStyle = {
+            fontWeight: 700,
+            color: "#00aae6",
+            margin: '10px',
+            padding: '10px',
+            border: 'solid 1px',
+            borderRadius: '10px',
+        }
+        const linkStyle = {
+            color: '#fff',
+            margin: '10px',
+            padding: '10px',
+        }
+        const tabStyle = {
+            margin: '10px 0px'
+        }
         return (
 
             <Navbar dark expand="md" color="rgba-black-strong">
@@ -38,23 +56,21 @@ class NavbarPage extends React.Component {
                         <Media object src={require('../assets/img/logo.png')} alt="Cascade logo" style={{ width: 200 }} />
                     </Media>
                 </NavbarBrand>
-                <NavbarToggler
-                    onClick={this.toggleCollapse}
-                />
+
+                <HamburgerToggler id="hamburger1" className="navbar-toggler" onClick={this.toggleCollapse} right />
                 <Collapse
-                    id="navbarCollapse3"
                     isOpen={this.state.isOpen}
                     navbar
                 >
                     <NavbarNav left>
-                        <NavItem>
-                            <NavLink to="/home">Home</NavLink>
+                        <NavItem style={tabStyle}>
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/home">Home</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink to="/about">About</NavLink>
+                        <NavItem style={tabStyle}>
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/about">About</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink to="/services">Services</NavLink>
+                        <NavItem style={tabStyle}>
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/services">Services</NavLink>
                         </NavItem>
 
                         {/**
@@ -75,16 +91,16 @@ class NavbarPage extends React.Component {
                         </NavItem>
                         */}
 
-                        <NavItem>
-                            <NavLink to="/projects">Projects</NavLink>
-                        </NavItem>
-                        
-                        <NavItem>
-                            <NavLink to="/careers">Careers</NavLink>
+                        <NavItem style={tabStyle}>
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/projects">Projects</NavLink>
                         </NavItem>
 
-                        <NavItem>
-                            <NavLink to="/contact">Contact</NavLink>
+                        <NavItem style={tabStyle}>
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/careers">Careers</NavLink>
+                        </NavItem>
+
+                        <NavItem style={tabStyle}> 
+                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/contact">Contact</NavLink>
                         </NavItem>
                     </NavbarNav>
                 </Collapse>

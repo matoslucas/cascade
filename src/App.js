@@ -14,6 +14,7 @@ import Projects from './pages/Projects'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+import LegacyFarmsProject from './pages/LegacyFarmsProject'
 
 import ReactGA from 'react-ga'
 
@@ -52,6 +53,8 @@ class App extends Component {
               <Route path="/projects" component={Projects} />
               <Route path="/contact" component={Contact} />
               <Route path="/careers" component={Careers} />
+              <Route path="/legacyfarms" component={LegacyFarmsProject} />
+              
             </Switch>
             <FooterPage />
           </div>
