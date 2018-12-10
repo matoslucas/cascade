@@ -29,24 +29,31 @@ history.listen((location, action) => {
 class App extends Component {
 
   componentDidMount() {
-   
 
-}
+
+  }
 
   render() {
+
+    let showMenuAndFooter = true
+    if (window.location.pathname === '/legacyfarms') {
+      showMenuAndFooter = false
+    }
+
     return (
       <div className="App">
         <Router history={history}>
           <div>
-            <NavbarPage />
+            {showMenuAndFooter ? <NavbarPage /> : null}
+
             <Switch>
-              
-              <Route exact strict path="/" render={({location}) => {
-                    if (location.pathname === window.location.pathname) {
-                        return <Redirect to="/home" />;
-                    }
-                    return null;
-                }} />
+
+              <Route exact strict path="/" render={({ location }) => {
+                if (location.pathname === window.location.pathname) {
+                  return <Redirect to="/home" />;
+                }
+                return null;
+              }} />
               <Route path="/home" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/services" component={Services} />
@@ -54,9 +61,10 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/careers" component={Careers} />
               <Route path="/legacyfarms" component={LegacyFarmsProject} />
-              
+
             </Switch>
-            <FooterPage />
+            {showMenuAndFooter ? <FooterPage /> : null}
+
           </div>
         </Router>
 

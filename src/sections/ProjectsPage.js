@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { 
-  Container, 
-  Row, 
-  Col, 
-  View, 
+import {
+  Container,
+  Row,
+  Col,
+  View,
   // Mask, 
-  CardBody, 
-  Button, 
+  CardBody,
+  Button,
   Fa,
- } from 'mdbreact';
+} from 'mdbreact';
 
 class ProjectsPage extends Component {
   render() {
@@ -27,6 +27,25 @@ class ProjectsPage extends Component {
             Let’s get started.
           </p>
           <Row className="text-center">
+
+            <Col lg="4" md="12" className="mb-lg-0 mb-4">
+              <View hover rounded className="overlay rounded z-depth-1">
+                <img src={require('../assets/img/projects/legacyFarms/tractor.jpg')} alt="Legacy Farms"
+                  className="img-fluid" />
+              </View>
+              <CardBody className="pb-0">
+                <h4 className="font-weight-bold my-3">
+                  Legacy Farms
+                </h4>
+                <p className="grey-text">
+                  Utah Valley’s top-selling community,
+                  is a hand-crafted, 35-foot wooden water tower — the remarkable entry monument to D.R. Horton’s
+                  new master-planned community in Saratoga Springs.
+                </p>
+                <Button href="/legacyfarms" color="indigo" size="sm"><Fa icon="clone" className="left" /> View project</Button>
+              </CardBody>
+            </Col>
+
             <Col lg="4" md="12" className="mb-lg-0 mb-4">
               <View hover rounded className="overlay rounded z-depth-1">
                 <img src={require('../assets/img/projects/commons.jpg')} alt="The Commons"
@@ -39,11 +58,15 @@ class ProjectsPage extends Component {
                 <p className="grey-text">
                   In the modern industrialized world, construction usually involves the translation of designs into reality.
                 </p>
+                {/**
                 <Button color="indigo" size="sm"><Fa icon="clone" className="left" /> View project</Button>
+                */}
+
               </CardBody>
             </Col>
+
             <Col lg="4" md="12" className="mb-lg-0 mb-4">
-              <View  hover rounded className="overlay rounded z-depth-1">
+              <View hover rounded className="overlay rounded z-depth-1">
                 <img src={require('../assets/img/projects/harrington-hollow.jpg')} alt="Harrington Hollow"
                   className="img-fluid" />
               </View>
@@ -52,11 +75,14 @@ class ProjectsPage extends Component {
                 <p className="grey-text">
                   This spacious single family home does not only have all the modern conveniences homeowners want.
                 </p>
+                {/**
                 <Button color="indigo" size="sm"><Fa icon="clone" className="left" /> View project</Button>
+                 */}
+
               </CardBody>
             </Col>
             <Col lg="4" md="12" className="mb-lg-0 mb-4">
-              <View  hover rounded className="overlay rounded z-depth-1">
+              <View hover rounded className="overlay rounded z-depth-1">
                 <img src={require('../assets/img/projects/rushton-meadows.jpg')} alt="Rushton Meadows" className="img-fluid" />
               </View>
               <CardBody className="pb-0">
@@ -64,7 +90,9 @@ class ProjectsPage extends Component {
                 <p className="grey-text">
                   Beautiful condos with spacious rooms and great amenities in a great neighborhood.
                 </p>
+                {/*
                 <Button color="indigo" size="sm"><Fa icon="clone" className="left" /> View project</Button>
+                */}
               </CardBody>
             </Col>
           </Row>
