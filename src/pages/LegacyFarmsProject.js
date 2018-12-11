@@ -6,13 +6,20 @@ import ParallaxComp from '../components/ParallaxComp'
 class LegacyFarmsProject extends Component {
 
     render() {
+        
+        const images = [
+            require('../assets/img/projects/legacyFarms/Legacy_Farms_-800x600.jpg'),
+            require('../assets/img/projects/legacyFarms/Clover_Legacy_188-1.jpg'),
+            require('../assets/img/projects/legacyFarms/Clover_Legacy_188-2.jpg'),
+          ]
+
         const data = [
            // stage  0
             {
                 image: {
                     stage: 0,
                     next:1,
-                    src: require('../assets/img/projects/legacyFarms/Legacy_Farms_-800x600.jpg')
+                    src: images[0]
                 }
             },
             {
@@ -28,7 +35,7 @@ class LegacyFarmsProject extends Component {
                 image: {
                     stage: 1,
                     next:2,
-                    src: require('../assets/img/projects/legacyFarms/Clover_Legacy_188-1.jpg')
+                    src: images[1]
                 }
             },
             {
@@ -44,7 +51,7 @@ class LegacyFarmsProject extends Component {
                 image: {
                     stage: 2,
                     next:0,
-                    src: require('../assets/img/projects/legacyFarms/Clover_Legacy_188-2.jpg')
+                    src: images[2]
                 }
             },
             {
@@ -60,7 +67,7 @@ class LegacyFarmsProject extends Component {
         ]
         return (
             <div>
-                <ParallaxComp data={data} />
+                <ParallaxComp data={data} images={images} />
             </div>
         )
     }

@@ -30,8 +30,10 @@ class ProjectsPage extends Component {
 
             <Col lg="4" md="12" className="mb-lg-0 mb-4">
               <View hover rounded className="overlay rounded z-depth-1">
-                <img src={require('../assets/img/projects/legacyFarms/tractor.jpg')} alt="Legacy Farms"
-                  className="img-fluid" />
+                <a href="/legacyfarms" target="_self">
+                  <img src={require('../assets/img/projects/legacyFarms/tractor.jpg')} alt="Legacy Farms"
+                    className="img-fluid" />
+                </a>
               </View>
               <CardBody className="pb-0">
                 <h4 className="font-weight-bold my-3">
