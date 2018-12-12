@@ -16,14 +16,9 @@ import Contact from './pages/Contact'
 import Services from './pages/Services'
 import LegacyFarmsProject from './pages/LegacyFarmsProject'
 
-import ReactGA from 'react-ga'
+import withTracker from './withTracker';
 
 const history = createBrowserHistory()
-ReactGA.initialize('UA-129885689-1');
-history.listen((location, action) => {
-  ReactGA.pageview(location.pathname + location.search);
-  console.log(action, location.pathname, location.state);
-});
 
 
 class App extends Component {
@@ -54,13 +49,13 @@ class App extends Component {
                 }
                 return null;
               }} />
-              <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/services" component={Services} />
-              <Route path="/projects" component={Projects} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/careers" component={Careers} />
-              <Route path="/legacyfarms" component={LegacyFarmsProject} />
+              <Route path="/home" component={withTracker(Home)} />
+              <Route path="/about" component={withTracker(About)} />
+              <Route path="/services" component={withTracker(Services)} />
+              <Route path="/projects" component={withTracker(Projects)} />
+              <Route path="/contact" component={withTracker(Contact)} />
+              <Route path="/careers" component={withTracker(Careers)} />
+              <Route path="/legacyfarms" component={withTracker(LegacyFarmsProject)} />
 
             </Switch>
             {showMenuAndFooter ? <FooterPage /> : null}

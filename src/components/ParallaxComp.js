@@ -49,7 +49,7 @@ class ParallaxComp extends React.Component {
 
                     {data && Array.isArray(data) ?
                         data.map((item, index) => {
-                            console.log(item)
+                            // console.log(item)
                             if (item && item.box) {
 
                                 return (<Parallax.Layer
