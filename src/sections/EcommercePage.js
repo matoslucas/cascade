@@ -7,7 +7,7 @@ class EcommercePage extends Component {
       <Container>
         <section className="text-center my-5">
           <h2 className="h1-responsive font-weight-bold text-center my-5">Our bestsellers</h2>
-          <p className="grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+          <p className="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
           <Row>
             <Col lg="3" md="6" className="mb-lg-0 mb-4">
               <Card cascade narrow ecommerce className="view zoom">
@@ -45,8 +45,8 @@ class EcommercePage extends Component {
                       <strong>49$</strong>
                     </span>
                     <span className="float-right">
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart grey-text ml-3" tooltipContent="Add to cart"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt grey-text ml-3" tooltipContent="Share"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart ml-3" tooltipContent="Add to cart"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt ml-3" tooltipContent="Share"/>
                       <Tooltip placement="top" tag="a" component="i" className="active" componentClass="fa fa-heart ml-3" tooltipContent="Added to watchlist"/>
                     </span>
                   </CardFooter>
@@ -57,7 +57,7 @@ class EcommercePage extends Component {
               <Card cascade narrow ecommerce>
                 <CardImage cascade src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/2.jpg" top alt="sample photo" overlay="white-slight" />
                 <CardBody cascade className="text-center">
-                  <a href="" className="grey-text">
+                  <a href="" className="">
                     <h5>Shoes</h5>
                   </a>
                   <CardTitle>
@@ -88,9 +88,9 @@ class EcommercePage extends Component {
                       <strong>89$</strong>
                     </span>
                     <span className="float-right">
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart grey-text ml-3" tooltipContent="Add to cart"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt grey-text ml-3" tooltipContent="Share"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-heart grey-text ml-3" tooltipContent="Add to watchlist"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart ml-3" tooltipContent="Add to cart"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt ml-3" tooltipContent="Share"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-heart ml-3" tooltipContent="Add to watchlist"/>
                     </span>
                   </CardFooter>
                 </CardBody>
@@ -100,7 +100,7 @@ class EcommercePage extends Component {
               <Card cascade narrow ecommerce>
                 <CardImage cascade src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/4.jpg" top alt="sample photo" overlay="white-slight" />
                 <CardBody cascade className="text-center">
-                  <a href="" className="grey-text">
+                  <a href="">
                     <h5>Outwear</h5>
                   </a>
                   <CardTitle>
@@ -131,9 +131,9 @@ class EcommercePage extends Component {
                       <strong>59$</strong>
                     </span>
                     <span className="float-right">
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart grey-text ml-3" tooltipContent="Add to cart"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt grey-text ml-3" tooltipContent="Share"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-heart grey-text ml-3" tooltipContent="Add to watchlist"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart ml-3" tooltipContent="Add to cart"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt ml-3" tooltipContent="Share"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-heart ml-3" tooltipContent="Add to watchlist"/>
                     </span>
                   </CardFooter>
                 </CardBody>
@@ -143,7 +143,7 @@ class EcommercePage extends Component {
               <Card cascade narrow ecommerce>
                 <CardImage cascade src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/3.jpg" top alt="sample photo" overlay="white-slight" />
                 <CardBody cascade className="text-center">
-                  <a href="" className="grey-text">
+                  <a href="">
                     <h5>Blouses</h5>
                   </a>
                   <CardTitle>
@@ -174,8 +174,8 @@ class EcommercePage extends Component {
                       <strong>119$</strong>
                     </span>
                     <span className="float-right">
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart grey-text ml-3" tooltipContent="Add to cart"/>
-                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt grey-text ml-3" tooltipContent="Share"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-shopping-cart ml-3" tooltipContent="Add to cart"/>
+                      <Tooltip placement="top" tag="a" component="i" componentClass="fa fa-share-alt ml-3" tooltipContent="Share"/>
                       <Tooltip placement="top" tag="a" component="i" className="active" componentClass="fa fa-heart ml-3" tooltipContent="Added to watchlist"/>
                     </span>
                   </CardFooter>

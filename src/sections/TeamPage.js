@@ -22,7 +22,7 @@ class TeamPage extends Component {
                     <h2 className="h1-responsive font-weight-bold my-5">
                         Build with Confidence
                     </h2>
-                    <p className="grey-text w-responsive mx-auto mb-5">
+                    <p className="w-responsive mx-auto mb-5">
                         We are building the legacy buildings of tomorrow, the designs that future generations will look back on for inspiration.
                         We believe the only way to give them something worth looking at is by working together:
                         you have the vision, and we have the know-how.
@@ -37,7 +37,7 @@ class TeamPage extends Component {
                             <h2 className="h1-responsive font-weight-bold my-5">
                                 Our History
                             </h2>
-                            <p className="grey-text w-responsive mx-auto mb-5">
+                            <p className="w-responsive mx-auto mb-5">
                                 We are building the legacy buildings of tomorrow,
                                 the designs that future generations will look back on for inspiration.
                                 We believe the only way to give them something worth looking at is by working together:
@@ -60,7 +60,7 @@ class TeamPage extends Component {
                     <h2 className="h1-responsive font-weight-bold my-5">
                         Our Team
                     </h2>
-                    <p className="grey-text w-responsive mx-auto mb-5">
+                    <p className="w-responsive mx-auto mb-5">
                         We owe all of our success to our wonderful employees: they’re always on call and looking for ways to get more done in less time.
                         Our employees use innovative database technology that streamlines scheduling and other essential business information,
                         accessing critical data and workflows from a single smartphone app.

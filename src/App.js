@@ -14,7 +14,9 @@ import Projects from './pages/Projects'
 import Careers from './pages/Careers'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+
 import LegacyFarmsProject from './pages/LegacyFarmsProject'
+import ParkEstatesProject from './pages/ParkEstatesProject'
 
 import withTracker from './withTracker';
 
@@ -31,7 +33,10 @@ class App extends Component {
   render() {
 
     let showMenuAndFooter = true
-    if (window.location.pathname === '/legacyfarms') {
+    if (
+        window.location.pathname === '/legacyfarms' 
+        || window.location.pathname === '/parkestates'
+    ) {
       showMenuAndFooter = false
     }
 
@@ -56,6 +61,7 @@ class App extends Component {
               <Route path="/contact" component={withTracker(Contact)} />
               <Route path="/careers" component={withTracker(Careers)} />
               <Route path="/legacyfarms" component={withTracker(LegacyFarmsProject)} />
+              <Route path="/parkestates" component={withTracker(ParkEstatesProject)} />
 
             </Switch>
             {showMenuAndFooter ? <FooterPage /> : null}
