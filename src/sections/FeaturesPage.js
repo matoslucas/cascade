@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-    Container,
-    Row,
-    Col,
-    Fa,
+    // Container,
+    // Row,
+    // Col,
+    // Fa,
     MDBCol, MDBRow, MDBContainer,
     MDBBtn,
     MDBCard, MDBCardBody, MDBCardTitle, MDBCardText,
@@ -13,7 +13,7 @@ import {
 class FeaturesPage extends Component {
     render() {
         return (
-            <Container >
+            <MDBContainer >
                 <MDBRow className="mb-4">
                     <MDBCol sm="6">
                         <MDBCard style={{ marginTop: "1rem" }} >
@@ -22,7 +22,6 @@ class FeaturesPage extends Component {
                                     At Cascade, your exterior project is in good hands.
                                 </MDBCardTitle>
                                 <MDBCardText>
-                                    <br />
                                     <p>
                                         We partner with our clients to give them exactly the look they envision
                                         with professional guidance and execution.
@@ -33,12 +32,13 @@ class FeaturesPage extends Component {
                                     </p>
                                     <p>
                                         You are our focus, and your success is our success.
-                                        Call us today and get the look you want with the service you want.
+                                    </p>
+                                    <p>
+                                        <a href="tel:801-980-3393">Call us today </a> and get the look you want with the service you want.
                                     </p>
                                 </MDBCardText>
-                                <br />
                                 <hr className="my-2" />
-                                <MDBBtn href="/about" color="primary">Know our team</MDBBtn>
+                                <MDBBtn href="/about" color="primary">Meet Our Team</MDBBtn>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
@@ -46,7 +46,7 @@ class FeaturesPage extends Component {
                     <MDBCol sm="6">
                         <MDBCard style={{ marginTop: "1rem" }}>
                             <MDBCardBody>
-                                <MDBCardTitle>The Cascade Way.</MDBCardTitle>
+                                <MDBCardTitle>Build with Confidence.</MDBCardTitle>
                                 <MDBCardText>
                                     <p> 
                                        We are building the legacy buildings of tomorrow,
@@ -161,7 +161,7 @@ class FeaturesPage extends Component {
                     </Row>
                 </section>
                  */}
-            </Container>
+            </MDBContainer>
                 );
             };
         }

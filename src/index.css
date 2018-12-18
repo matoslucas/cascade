@@ -13,6 +13,9 @@ body{
 h2{
   color: #00aae6 !important; 
 }
+h4{
+  font-family: 'Cabin Sketch';
+}
 .navbar-nav {
   font-family: 'Cabin Sketch';
   font-size: 1.3em;

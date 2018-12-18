@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import BlogPage from '../sections/BlogPage'
+import ServicesSection from '../sections/ServicesSection'
 
 class Services extends Component {
 
     render() {
         return (
             <div>
-                <BlogPage />
+                <ServicesSection />
             </div>
         )
     }

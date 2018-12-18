@@ -1,29 +1,34 @@
 import React, { Component } from 'react';
-import { 
-    MDBContainer, 
-    Row, 
-    Col, 
+import {
+    MDBContainer,
+    MDBJumbotron,
+    Row,
+    Col,
     // Card, 
     // CardBody, 
     // Fa, 
     //Button, 
     // Input
- } from 'mdbreact';
+} from 'mdbreact';
 
 class ContactPage extends Component {
     render() {
         return (
             <MDBContainer>
-                <section className="my-5">
-                    <h2 className="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
-                    <p className="text-center w-responsive mx-auto pb-5">
-                        We are building the legacy buildings of tomorrow,
-                        the designs that future generations will look back on for inspiration.
+                <MDBJumbotron style={{ marginTop: "1rem" }}>
+                    <h2 className="card-title"> Contact us </h2>
+                    <p>
                         We believe the only way to give them something worth looking at is by working together:
+                    </p>
+                    <p>
                         you have the vision, and we have the know-how.
                     </p>
 
+                    <hr className="my-2" />
 
+                </MDBJumbotron>
+                <section className="my-5">
+                    
                     <Row>
                         <Col lg="12">
                             <div id="map-container" className="rounded z-depth-1-half map-container" style={{ height: '400px' }}>
@@ -40,15 +45,15 @@ class ContactPage extends Component {
 
                         </Col>
                         <Col lg="12">
-                          
-                                <iframe
-                                    title="google-form"
-                                    src="https://docs.google.com/forms/d/e/1FAIpQLSeo4qDLaxT1S8HGoZ-PfCTF_ouZY7g31ZYxxpq7ChIxQhHHSw/viewform?embedded=true"
-                                    width="100%"
-                                    height="900"
-                                    frameBorder="0"
-                                    style={{ border: 0 }}>
-                                    Loading...
+
+                            <iframe
+                                title="google-form"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSeo4qDLaxT1S8HGoZ-PfCTF_ouZY7g31ZYxxpq7ChIxQhHHSw/viewform?embedded=true"
+                                width="100%"
+                                height="900"
+                                frameBorder="0"
+                                style={{ border: 0 }}>
+                                Loading...
                                 </iframe>
 
                         </Col>
@@ -102,7 +107,7 @@ class ContactPage extends Component {
 
                         </Col>
                         */}
-                        
+
                     </Row>
 
                 </section>

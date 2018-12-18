@@ -1,0 +1,78 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+// import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+
+
+const styles = theme => ({
+    card: {
+        maxWidth: 800,
+        margin: 10,
+    },
+    content:{
+        height: 280,
+    },
+    media: {
+        height: 140,
+        paddingTop: '56.25%', // 16:9
+    },
+    grey: {
+        fontFamily: 'Cabin Sketch',
+        color: '#9e9e9e'
+    },
+    cyan: {
+        fontFamily: 'Cabin Sketch',
+        color: '#00bcd4'
+    },
+    red: {
+        fontFamily: 'Cabin Sketch',
+        color: '#f44336'
+    },
+    green: {
+        fontFamily: 'Cabin Sketch',
+        color: '#4caf50'
+    },
+    orange: {
+        fontFamily: 'Cabin Sketch',
+        color: '#ff9800'
+    }
+});
+
+
+class ServiceCard extends React.Component {
+
+    render() {
+        const { classes, img, alt, title, icon, content, color } = this.props
+        
+        return (
+            <Card className={classes.card}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={img}
+                        title={alt}
+                    />
+                    <CardContent  className={classes.content}>
+                    <h4 className={classes[color] }>
+                        {icon}
+                        {title}
+                    </h4>
+                        {content}
+                        
+                    </CardContent>
+                </CardActionArea>
+
+            </Card>
+        );
+    }
+}
+
+ServiceCard.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(ServiceCard);

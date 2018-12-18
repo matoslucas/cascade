@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import {
-    Container,
+    // Container,
     Row,
     Col,
-    View,
+    //View,
+    MDBJumbotron,
+    //MDBCol, MDBRow, 
+    MDBContainer,
+    //MDBBtn,
+    //MDBCard, MDBCardBody, MDBCardTitle, MDBCardText,
 } from 'mdbreact';
 
 // import ProfileCard from '../components/ProfileCard'
@@ -17,55 +22,24 @@ class TeamPage extends Component {
         const LG = '4';
 
         return (
-            <Container>
-                <section>
-                    <h2 className="h1-responsive font-weight-bold my-5">
-                        Build with Confidence
-                    </h2>
-                    <p className="w-responsive mx-auto mb-5">
-                        We are building the legacy buildings of tomorrow, the designs that future generations will look back on for inspiration.
-                        We believe the only way to give them something worth looking at is by working together:
-                        you have the vision, and we have the know-how.
-                        Our highly skilled teams will execute your unique designs and plans to deliver a quality product you can be proud of.
-                        We’re continuously innovating and finding better ways to implement technology and innovation to improve the building process.
-                        We’re cutting costs and waste while improving quality and aesthetics.
-                        Let’s get started.
+            <MDBContainer>
+                <MDBJumbotron style={{ marginTop: "1rem" }}>
+                    <h2 className="card-title">Our Team</h2>
+                    <p>
+                        We owe all of our success to our wonderful employees:
+                        they’re always on call and looking for ways to get more done in less time.
                     </p>
-                    <Row>
-                        <Col lg="7">
-
-                            <h2 className="h1-responsive font-weight-bold my-5">
-                                Our History
-                            </h2>
-                            <p className="w-responsive mx-auto mb-5">
-                                We are building the legacy buildings of tomorrow,
-                                the designs that future generations will look back on for inspiration.
-                                We believe the only way to give them something worth looking at is by working together:
-                                you have the vision, and we have the know-how.
-                                Our estimators will work with you to create efficient and durable buildings that perform to expectations,
-                                all while keeping within budget. We’re continuously innovating and finding better ways to design and build.
-                                We’re cutting costs and waste while improving quality and aesthetics. Let’s get started.
-                            </p>
-
-                        </Col>
-                        <Col lg="5">
-                            <View className="rounded z-depth-2 mb-lg-0 mb-4" hover>
-                                <img className="img-fluid" src={require('../assets/img/about.jpg')}
-                                    alt="about" />
-
-                            </View>
-                        </Col>
-                    </Row>
-
-                    <h2 className="h1-responsive font-weight-bold my-5">
-                        Our Team
-                    </h2>
-                    <p className="w-responsive mx-auto mb-5">
-                        We owe all of our success to our wonderful employees: they’re always on call and looking for ways to get more done in less time.
-                        Our employees use innovative database technology that streamlines scheduling and other essential business information,
-                        accessing critical data and workflows from a single smartphone app.
+                    <p>
+                        Our employees use innovative database technology that streamlines scheduling
+                        and other essential business information, accessing critical data and workflows
+                        from a single smartphone app.
+                    </p>
+                    <p>
                         We continue to innovate by borrowing from years of experience in different industries.
                     </p>
+                    <hr className="my-2" />
+                    
+                </MDBJumbotron>
 
                     <Row>
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
@@ -176,8 +150,8 @@ class TeamPage extends Component {
 
                         </Col>
                     </Row>
-                </section>
-            </Container>
+            
+            </MDBContainer>
         )
     }
 
