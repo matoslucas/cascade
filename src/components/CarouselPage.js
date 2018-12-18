@@ -10,7 +10,7 @@ class CarouselPage extends Component {
       showControls={true} 
       showIndicators={true} 
       className="z-depth-1"
-      style={{ fontFamily: 'Cabin Sketch'}}
+      style={{ fontFamily: 'Cabin Sketch', backgroundColor: '#d2d2d2'}}
       >
         <CarouselInner>
           <CarouselItem itemId="1">

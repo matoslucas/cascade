@@ -4,13 +4,77 @@ import {
     Row,
     Col,
     Fa,
+    MDBCol, MDBRow, MDBContainer,
+    MDBBtn,
+    MDBCard, MDBCardBody, MDBCardTitle, MDBCardText,
     // Button
 } from 'mdbreact';
 
 class FeaturesPage extends Component {
     render() {
         return (
-            <Container>
+            <Container >
+                <MDBRow className="mb-4">
+                    <MDBCol sm="6">
+                        <MDBCard style={{ marginTop: "1rem" }} >
+                            <MDBCardBody>
+                                <MDBCardTitle>
+                                    At Cascade, your exterior project is in good hands.
+                                </MDBCardTitle>
+                                <MDBCardText>
+                                    <br />
+                                    <p>
+                                        We partner with our clients to give them exactly the look they envision
+                                        with professional guidance and execution.
+                                    </p>
+                                    <p>
+                                        Because we work directly with you,
+                                        you’ll never have to worry about having your vision supplanted with another’s.
+                                    </p>
+                                    <p>
+                                        You are our focus, and your success is our success.
+                                        Call us today and get the look you want with the service you want.
+                                    </p>
+                                </MDBCardText>
+                                <br />
+                                <hr className="my-2" />
+                                <MDBBtn href="/about" color="primary">Know our team</MDBBtn>
+                            </MDBCardBody>
+                        </MDBCard>
+                    </MDBCol>
+
+                    <MDBCol sm="6">
+                        <MDBCard style={{ marginTop: "1rem" }}>
+                            <MDBCardBody>
+                                <MDBCardTitle>The Cascade Way.</MDBCardTitle>
+                                <MDBCardText>
+                                    <p> 
+                                       We are building the legacy buildings of tomorrow,
+                                       the designs that future generations will look back on for inspiration.
+                                    </p>
+                                    <p>
+                                       We believe the only way to give them something worth looking at is by working together:
+                                       you have the vision, and we have the know-how.
+                                    </p>
+                                    <p>
+                                       Our estimators will work with you to create efficient and durable buildings that perform to expectations,
+                                       all while keeping within budget.
+                                    </p>
+                                    <p>
+                                       We’re continuously innovating and finding better ways to design and build.
+                                       We’re cutting costs and waste while improving quality and aesthetics.
+                                    </p>
+                                        <a href="/contact">
+                                            Let’s get started.
+                                        </a>
+
+                                </MDBCardText>
+
+                            </MDBCardBody>
+                        </MDBCard>
+                    </MDBCol>
+                </MDBRow>
+                    {/*
                 <section className="text-center my-5">
                     <h2 className="h1-responsive font-weight-bold my-5">
                         At Cascade, your exterior project is in good hands.
@@ -96,9 +160,10 @@ class FeaturesPage extends Component {
                         </Col>
                     </Row>
                 </section>
+                 */}
             </Container>
-        );
-    };
-}
-
+                );
+            };
+        }
+        
 export default FeaturesPage;

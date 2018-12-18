@@ -41,11 +41,7 @@ class ParallaxComp extends React.Component {
                     />
                 )}
 
-                <Parallax ref={ref => (this.parallax = ref)} pages={3} style={{
-                    backgroundImage: 'url(' + require('../assets/img/Blueprints-for-house-1.jpg') + ')',
-                    backgroundColor: '#333',
-                    backgroundSize: 'cover',
-                }}>
+                <Parallax ref={ref => (this.parallax = ref)} pages={3} className="Projects">
 
                     {data && Array.isArray(data) ?
                         data.map((item, index) => {

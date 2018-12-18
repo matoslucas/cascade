@@ -1,4 +1,40 @@
-
+body{
+  background-color: #d2d2d2 !important;
+  
+}
+.App{
+  background-color: #001821;
+  background-image: url(../src/assets/img/ravenna.png);
+}
+.Projects{
+  background-color: #001821;
+  background-image: url(../src/assets/img/graphy-dark.png);
+}
+h2{
+  color: #00aae6 !important; 
+}
+.navbar-nav {
+  font-family: 'Cabin Sketch';
+  font-size: 1.3em;
+}
+.activeTab {
+  color: #00aae6 !important;
+  margin: 10px;
+  padding: 10px;
+}
+.activeTab::before { 
+  content:"\A";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00aae6;
+  display: inline-block;
+  margin: 2px 2px;
+}
+.card-title {
+  color: #00aae6;
+  font-family: 'Cabin Sketch';
+}
 .carousel-indicators .active {
   background-color: #00aae6 !important;
 }

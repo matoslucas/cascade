@@ -32,25 +32,18 @@ class NavbarPage extends React.Component {
     }
 
     render() {
-        const activeStyle = {
-            fontWeight: 700,
-            color: "#00aae6",
-            margin: '10px',
-            padding: '10px',
-            border: 'solid 1px',
-            borderRadius: '10px',
-        }
+        
         const linkStyle = {
             color: '#fff',
-            margin: '10px',
-            padding: '10px',
+            margin: '5px',
+            padding: '5px',
         }
         const tabStyle = {
-            margin: '10px 0px'
+            margin: '5px 0px'
         }
         return (
 
-            <Navbar dark expand="md" color="rgba-black-strong">
+            <Navbar dark expand="md" style={{ backgroundColor: '#3f3f3f'}}>
                 <NavbarBrand>
                     <Media left >
                         <Media object src={require('../assets/img/logo.png')} alt="Cascade logo" style={{ width: 200 }} />
@@ -64,13 +57,13 @@ class NavbarPage extends React.Component {
                 >
                     <NavbarNav left>
                         <NavItem style={tabStyle}>
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/home">Home</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/home">Home</NavLink>
                         </NavItem>
                         <NavItem style={tabStyle}>
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/about">About</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/about">About</NavLink>
                         </NavItem>
                         <NavItem style={tabStyle}>
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/services">Services</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/services">Services</NavLink>
                         </NavItem>
 
                         {/**
@@ -92,15 +85,15 @@ class NavbarPage extends React.Component {
                         */}
 
                         <NavItem style={tabStyle}>
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/projects">Projects</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/projects">Projects</NavLink>
                         </NavItem>
 
                         <NavItem style={tabStyle}>
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/careers">Careers</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/careers">Careers</NavLink>
                         </NavItem>
 
                         <NavItem style={tabStyle}> 
-                            <NavLink activeStyle={activeStyle} style={linkStyle} to="/contact">Contact</NavLink>
+                            <NavLink activeClassName="activeTab" style={linkStyle} to="/contact">Contact</NavLink>
                         </NavItem>
                     </NavbarNav>
                 </Collapse>
