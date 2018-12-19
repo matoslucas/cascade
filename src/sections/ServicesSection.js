@@ -108,7 +108,7 @@ class ServicesSection extends React.Component {
                         img={require('../assets/img/slide-rain-gutters.jpg')} 
                         title={'Rain Gutters'}
                         color="grey"
-                        icon={<MDBIcon icon="store-alt" className="pr-2" />}
+                        icon={<MDBIcon icon="kaaba" className="pr-2" />}
                         content={<p>
                                 Rain gutters are a necessity in utility, but they can also be an opportunity for style.
                         We provide gutters in a variety of materials and colors.
