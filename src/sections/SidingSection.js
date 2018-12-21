@@ -4,79 +4,106 @@ import {
     MDBJumbotron,
     MDBRow,
     MDBCol,
-    MDBIcon,
+    //MDBIcon,
  
 } from "mdbreact";
 
 
-import ServiceCard from '../components/ServiceCard'
+import ProductCard from '../components/ProductCard'
 
 
-class ServicesSection extends React.Component {
+class SidingSection extends React.Component {
  render() {
    
     return (
         <MDBContainer>
             <MDBJumbotron style={{ marginTop: "1rem" }}>
-                <h4 className="card-title">Cascade is a unique, full-service exterior-finishing company.</h4>
+                <h4 className="card-title">Siding Installation</h4>
+
                 <p>
-                    We provide clients with a variety of applications, allowing you to manage your building’s exterior through a single company.
+                    Exterior siding is a big part of your project curb appeal, making it crucial that you install it properly. 
                 </p>
+                <p>
+                Our professional siding installers will ensure that the installation is done right. 
+                </p>
+                 <p>
+                 With Cascade, you know your project will benefit from the expertise of qualified 
+                 siding team and installers, all backed by the best warranties in the siding business.
+                </p>
+               
+                <p>
+                    Cascade installs fiber cement siding made by James Hardie, America’s number one siding brand.     
+                </p>
+                
 
                 <hr className="my-2" />
 
             </MDBJumbotron>
             <MDBRow around>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                    <ServiceCard 
-                        img={require('../assets/img/slide-siding.png')} 
-                        title={'Siding'}
-                        color="grey"
-                        link="/service/siding"
-                        icon={<MDBIcon icon="warehouse" className="pr-2" />}
-                        content={<div><p>
-                            Your building should look good inside and out.
-                            </p><p>
-                                It should instill confidence in you and your clientele from the very first look and from every angle.
-                            
-                        </p> </div>}
+                    <ProductCard 
+                        img={require('../assets/img/siding/cedarmill.png')} 
+                        title={'HardiePlank® Lap Siding'}
+                        color={'#601e1f'}
+                        data={[
+                            '#601e1f',
+                            '#5e3c1f',
+                            '#847556', 
+                            '#2e2e2c',
+                            '#425259',
+                            '#7d7974',
+
+                            '#9fa06f',
+                            //'#efe7b8',
+                        ]}
                     />
                 
 
                 </MDBCol>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
-                <ServiceCard 
-                        img={require('../assets/img/slide-stucco.jpg')} 
-                        title={'Stucco'}
-                        color="cyan"
-                        icon={<MDBIcon icon="archway" className="pr-2" />}
-                        content={<p>
-                            Stucco is a popular choice for a look that is even, consistent, and low maintenance.
-                        It is naturally flame resistant and durable, so it can take whatever the elements dish out and stay strong.
-                        </p>}
+                <ProductCard 
+                        img={require('../assets/img/siding/staggered.png')} 
+                        title={'HardieShingle® Siding'}
+                        color={'#9fa06f'}
+                        data={[
+                            '#601e1f',
+                            '#5e3c1f',
+                            '#847556', 
+                            '#2e2e2c',
+                            '#425259',
+                            '#7d7974',
+
+                            '#9fa06f',
+                            //'#efe7b8',
+                        ]}
                     />
 
                 </MDBCol>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 
-                <ServiceCard 
-                        img={require('../assets/img/slide-brick.jpg')} 
-                        title={'Brick'}
-                        color="red"
-                        icon={<MDBIcon icon="hotel" className="pr-2" />}
-                        content={<p>
-                             Brick lends your building a classic look that is hard to beat.
-                        It plays on nostalgia for historic downtown businesses and small-town charm,
-                        instilling trust at the first look.
-                        </p>}
+                <ProductCard 
+                        img={require('../assets/img/siding/cedarmillVertical.png')} 
+                        title={'HardiePanel® Vertical Siding'}
+                        color={'#7d7974'}
+                        data={[
+                            '#601e1f',
+                            '#5e3c1f',
+                            '#847556', 
+                            '#2e2e2c',
+                            '#425259',
+                            '#7d7974',
+
+                            '#9fa06f',
+                            //'#efe7b8',
+                        ]}
                     />
                 </MDBCol>
             </MDBRow>
-
+            {/*
             <MDBRow>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
                 
-                <ServiceCard 
+                <ProductCard 
                         img={require('../assets/img/slide-stone.jpg')} 
                         title={'Stone'}
                         color="green"
@@ -91,7 +118,7 @@ class ServicesSection extends React.Component {
                 </MDBCol>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 
-                <ServiceCard 
+                <ProductCard 
                         img={require('../assets/img/slide-soffit-fascia.jpg')} 
                         title={'Soffit & Fascia'}
                         color="orange"
@@ -105,7 +132,7 @@ class ServicesSection extends React.Component {
                 </MDBCol>
                 <MDBCol lg="4" md="12" className="mb-lg-0 mb-4">
 
-                <ServiceCard 
+                <ProductCard 
                         img={require('../assets/img/slide-rain-gutters.jpg')} 
                         title={'Rain Gutters'}
                         color="grey"
@@ -118,10 +145,10 @@ class ServicesSection extends React.Component {
                     
                 </MDBCol>
             </MDBRow>
-
+            */}
         </MDBContainer>
     );
 }}
 
-export default ServicesSection;
+export default SidingSection;
 

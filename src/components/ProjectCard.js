@@ -61,7 +61,8 @@ class ProjectCard extends React.Component {
                         <CardActions className={classes.actions}>
 
                             <Button href={link} color="indigo" size="sm">
-                                <Fa icon="clone" className="left" /> View project</Button>
+                                View project
+                                <Fa icon="chevron-right" className="left" /> </Button>
                         </CardActions>
                         : 
                         <CardActions className={classes.actions} > <div> &nbsp; </div></CardActions>

@@ -6,10 +6,10 @@ import ParallaxComp from '../components/ParallaxComp'
 class LegacyFarmsProject extends Component {
 
     componentDidMount() {
-        var ee = require('../data/legacyFarmsData.json')
-        console.log('componentDidMount', ee)
+        //var ee = require('../data/legacyFarmsData.json')
+        //console.log('componentDidMount', ee)
 
-        this.loadData(ee)
+        //this.loadData(ee)
 
     }
 
@@ -70,8 +70,8 @@ class LegacyFarmsProject extends Component {
                 box: {
                     stage: 1,
                     next: 2,
-                    title: 'LEGACY FARMS',
-                    text: "Utah Valley’s top-selling community, is a hand-crafted, 35-foot wooden water tower — the remarkable entry monument to D.R. Horton’s new master-planned community in Saratoga Springs.",
+                    title: 'PROJECT DETAILS',
+                    text: "Siding (JamesHardie), Hard Coat Stucco (Sand texture, Swirl texture, Smooth texture)",
                 }
             },
             // stage 2
@@ -86,8 +86,8 @@ class LegacyFarmsProject extends Component {
                 box: {
                     stage: 2,
                     next: 0,
-                    title: 'LEGACY FARMS',
-                    text: "Utah Valley’s top-selling community, is a hand-crafted, 35-foot wooden water tower — the remarkable entry monument to D.R. Horton’s new master-planned community in Saratoga Springs.",
+                    title: 'PROJECT DETAILS',
+                    text: "Painting, Rainguters, Soffit and Fascia",
                 }
 
             },

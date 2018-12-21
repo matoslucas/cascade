@@ -21,7 +21,7 @@ class FeaturesPage extends Component {
                                 <MDBCardTitle>
                                     At Cascade, your exterior project is in good hands.
                                 </MDBCardTitle>
-                                <MDBCardText>
+                                <MDBCardText tag="div">
                                     <p>
                                         We partner with our clients to give them exactly the look they envision
                                         with professional guidance and execution.
@@ -47,7 +47,7 @@ class FeaturesPage extends Component {
                         <MDBCard style={{ marginTop: "1rem" }}>
                             <MDBCardBody>
                                 <MDBCardTitle>Build with Confidence.</MDBCardTitle>
-                                <MDBCardText>
+                                <MDBCardText tag="div">
                                     <p> 
                                        We are building the legacy buildings of tomorrow,
                                        the designs that future generations will look back on for inspiration.

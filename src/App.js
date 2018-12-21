@@ -55,6 +55,7 @@ class App extends Component {
               <Route path="/home" component={withTracker(Home)} />
               <Route path="/about" component={withTracker(About)} />
               <Route path="/services" component={withTracker(Services)} />
+              <Route path="/service/:section" component={withTracker(Services)} />
               <Route path="/projects" component={withTracker(Projects)} />
               <Route path="/contact" component={withTracker(Contact)} />
               <Route path="/careers" component={withTracker(Careers)} />

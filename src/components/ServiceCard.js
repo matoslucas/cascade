@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
 // import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-
+import {
+    Button,
+    Fa,
+} from 'mdbreact';
 
 const styles = theme => ({
     card: {
@@ -14,7 +18,10 @@ const styles = theme => ({
         margin: 10,
     },
     content:{
-        height: 280,
+        height: 220,
+    },
+    actions: {
+        justifyContent: 'center'
     },
     media: {
         height: 140,
@@ -46,7 +53,7 @@ const styles = theme => ({
 class ServiceCard extends React.Component {
 
     render() {
-        const { classes, img, alt, title, icon, content, color } = this.props
+        const { classes, img, alt, title, link, icon, content, color } = this.props
         
         return (
             <Card className={classes.card}>
@@ -65,7 +72,17 @@ class ServiceCard extends React.Component {
                         
                     </CardContent>
                 </CardActionArea>
+                {
+                    link ?
+                        <CardActions className="d-flex justify-content-end justify-content-lg-center">
 
+                            <Button href={link} color="primary" size="sm">
+                                Read more
+                                <Fa icon="chevron-right" className="ml-1" /> </Button>
+                        </CardActions>
+                        : 
+                        <CardActions className={classes.actions} > <div> &nbsp; </div></CardActions>
+                }
             </Card>
         );
     }
