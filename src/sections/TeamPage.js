@@ -101,23 +101,7 @@ class TeamPage extends Component {
 
 
                     <Row>
-                        <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
-
-                            <Profile name={'Julio Cortez'} title={'Scheduling'}
-                                img={require('../assets/img/profiles/Julio-CortezWB.jpg')}
-                                bio={<div>
-                                    Around the office, we call Bob “Jefe, Jr.” Without him setting our schedules and ordering our supplies,
-                                    we’d all be out of a job. |
-                                    Before joining Cascade,
-                                    Bob remodeled homes and worked as a personal banker for US Bank,
-                                    helping individuals and families get their finances in order and get control of their lives.
-                                    He received his associate degree in business in 2010 at Salt Lake City College.
-                                    He currently lives with his wife and two children,
-                                    teaching them to love soccer and horse racing as much as he does.
-                                    </div>
-                                } />
-
-                        </Col>
+                        
 
                         <Col lg={LG} md={MD} className="mb-lg-0 mb-4">
 
